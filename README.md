@@ -15,11 +15,12 @@ can be tried in an afternoon, which is what the exploratory phase requires.
 
 ### Strategy
 
-`DICOM.ipynb` loads the raw DICOM slices and implements interactive reslicing along all three
-axes — a first check that the data loaded correctly and that the spatial orientation is as
-expected. `PyVista.ipynb` renders the volume directly, establishing what the data looks like
-under volume rendering before implementing it from scratch in WebGL. `PNG.ipynb` is a
-conversion step that follows exploration: it normalizes the DICOM slices to PNG textures,
-which is the format the browser can load directly in
-[visible-human-gl](https://github.com/GalMunGral/visible-human-gl) and
-[visible-human-volume](https://github.com/GalMunGral/visible-human-volume).
+These notebooks were the actual preliminary work behind
+[visible-human-vtk](https://github.com/GalMunGral/visible-human-vtk),
+[visible-human-gl](https://github.com/GalMunGral/visible-human-gl), and
+[visible-human-volume](https://github.com/GalMunGral/visible-human-volume). `DICOM.ipynb`
+reads the raw DICOM files and adds interactive sliders to scrub through axial, coronal,
+and sagittal planes — verifying the data and developing an initial sense of its structure.
+`PyVista.ipynb` produces a quick volume rendering, previewing how the dataset responds to
+transfer functions before any WebGL implementation. `PNG.ipynb` converts the slices to
+normalized PNG textures for use as WebGL inputs in the production demos.
