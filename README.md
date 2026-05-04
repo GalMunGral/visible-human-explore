@@ -18,10 +18,9 @@ representations can be tried in an afternoon, which is what this phase requires.
 
 ### Strategy
 
-These notebooks were the actual preliminary work behind the production demos.
+These notebooks were the actual preliminary work behind the demos.
 `DICOM.ipynb` reads the raw DICOM files and adds interactive sliders to scrub through
 axial, coronal, and sagittal planes — verifying the data and developing an initial sense
 of its structure. `PyVista.ipynb` produces a quick volume rendering, previewing how the
 dataset responds to transfer functions before any WebGL implementation. `PNG.ipynb`
-converts the slices to normalized PNG textures for use as WebGL inputs in the production
-demos.
+converts the slices to normalized PNG textures for use as WebGL inputs in the demos.
