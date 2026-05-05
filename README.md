@@ -9,7 +9,7 @@ making a claim or explaining a phenomenon. The other is instrumental — working
 the data to figure out what is even worth showing. This repo documents the second mode
 as the first step in a process that continues in
 [visible-human-vtk](https://github.com/GalMunGral/visible-human-vtk),
-[visible-human-gl](https://github.com/GalMunGral/visible-human-gl), and
+[visible-human-slicer](https://github.com/GalMunGral/visible-human-slicer), and
 [visible-human-volume](https://github.com/GalMunGral/visible-human-volume). Three
 notebooks use PyDICOM, matplotlib, and PyVista to rapidly slice and render the
 [Visible Human Project](https://www.nlm.nih.gov/research/visible/visible_human.html)
